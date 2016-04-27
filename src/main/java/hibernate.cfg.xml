@@ -42,7 +42,7 @@
 		<mapping class="com.studentAssist.classes.GCMIds" />
 
 
-
+ 
 
 	</session-factory>
 </hibernate-configuration>
