@@ -12,6 +12,6 @@ public class Accommodation {
 	@Produces(MediaType.TEXT_PLAIN)
 	public String testMethod()
 	{
-		return "It works";
+		return "It works secondly";
 	}
 }
