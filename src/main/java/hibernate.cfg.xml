@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+
+		<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+		<property name="c3p0.acquire_increment">1</property>
+		<property name="c3p0.idle_test_period">100</property> <!-- seconds -->
+		<property name="c3p0.max_size">100</property>
+		<property name="c3p0.max_statements">0</property>
+		<property name="c3p0.min_size">10</property>
+		<property name="c3p0.timeout">1800</property> <!-- seconds -->
+		<!-- Database details -->
+
+		<property name="hibernate.connection.url">jdbc:mysql://apurv.cqzmtisgrhoa.us-east-1.rds.amazonaws.com:3306/studentAssist?autoReconnect=true</property>
+		<property name="hibernate.connection.username">apurvk</property>
+		<property name="hibernate.connection.password">12345678</property>
+
+
+		<property name="show_sql">true</property>
+
+		 <property name="hbm2ddl.auto">update</property> 
+ 		<!-- <property name="hbm2ddl.auto">create</property> -->
+		<!-- annotated entitiy classes -->
+
+		<!-- <mapping class="com.appugadu.dto.UserDetails" /> <mapping class="com.appugadu.dto.Vehicle" 
+			/> -->
+
+		<mapping class="com.studentAssist.classes.AccommodationNotification" />
+		<mapping class="com.studentAssist.classes.AdvancedNotifications" />
+		<mapping class="com.studentAssist.classes.SimpleNotifications" />
+
+		<mapping class="com.studentAssist.classes.AccommodationAdd" />
+		<mapping class="com.studentAssist.classes.Users" />
+		<mapping class="com.studentAssist.classes.Apartments" />
+		<mapping class="com.studentAssist.classes.Airport" />
+		<mapping class="com.studentAssist.classes.GCMIds" />
+
+
+
+
+	</session-factory>
+</hibernate-configuration>
