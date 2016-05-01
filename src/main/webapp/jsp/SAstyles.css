@@ -1,0 +1,419 @@
+.apurv:hover {
+	background: #FAFAFA;
+}
+
+.chat-avatar {
+	padding: 11px 15px 0 13px;
+}
+
+.row
+{
+margin-bottom:inherit !important;	
+}
+
+label
+{
+	
+	color:black; !important;
+}
+
+.customDropdown
+{
+	 position: absolute;
+   	 z-index: 999;
+ 	 display: none; 	
+ 	
+}
+
+ .btn-flat
+ {
+ 	text-transform: initial !important;
+ 		text-decoration: none !important;
+ 	
+ 
+ }
+
+
+.subscribePopupButtons
+{
+	text-decoration: none !important;
+	overflow: hidden;
+	padding: initial !important;
+	
+}
+
+
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: none;
+}
+
+
+.navHeader{
+
+height:40%;
+background-image: url(http://2.bp.blogspot.com/-2RewSLZUzRg/U-9o6SD4M6I/AAAAAAAADIE/voax99AbRx0/s1600/14%2B-%2B1%2B%281%29.jpg);
+background-size: 100% 100%;
+
+
+
+}
+
+.istyle
+{
+	height:inherit;
+float: none;
+transition: initial;
+}
+
+.navRow
+{
+padding: 8px 15px 8px 13px;
+
+}
+
+.headerCollapse
+{
+	
+text-decoration: none !important;
+    color: black !important;
+    
+	
+}
+
+.userName {
+		left: 20%;
+		position: fixed;
+		top: 70%;
+	
+}
+
+.headerImage {
+	border-radius: 50%;
+	overflow: hidden;
+	position: fixed;
+	top: 15%;
+	left: 20%;
+}
+
+
+
+div.rippleAddList{
+  position: relative;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+
+.material{
+  position:relative;
+  color:white;
+  margin: 20px auto;
+  height:400px;
+  width:500px;
+  background:#f45673;
+  
+}
+
+.ripple{
+  overflow:hidden;
+}
+
+.ripple-effect{
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: grey;
+
+    
+  animation: ripple-animation 2s;
+}
+
+
+@keyframes ripple-animation {
+    from {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(100);
+      opacity: 0;
+    }
+}
+
+
+
+.avatar, .avatar-image {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+*::-webkit-scrollbar {
+	width: 6px !important;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+Pseudo ::scrollbar-track element
+*::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, .08);
+}
+#sidebar {
+    max-height: 100%;
+}
+#sidebar {
+     overflow-y: auto;
+ }
+
+
+.sidebar2 {
+    max-height: 85%;
+}
+.sidebar2 {
+     overflow-y: auto;
+ }
+
+
+.button {
+	background-color: #BDBDBD; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.searchVacancy:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
+		rgba(0, 0, 0, 0.19);
+}
+
+.chat {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.chat-body, .header-body, .location-body {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	border-top: 1px solid #f2f2f2;
+	padding: 13px 15px 0 0;
+}
+
+.apartmentDetails {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	padding: 13px 15px 0 0;
+}
+
+.chatlist .chat-status, .chatlist .location-secondary, .chatlist .header-secondary
+	{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+}
+
+.roomDetails {
+	font-weight: 400;
+	color: rgba(0, 0, 0, .6);
+}
+
+.chat-status {
+	font-weight: 400;
+	color: rgba(0, 0, 0, .6);
+	white-space: nowrap;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	text-align: left;
+}
+.info-icon1{
+	    z-index: 2;
+	
+}
+.info-icon2{
+	    z-index: 3;
+	
+}
+.apartmentName,.notesSection
+{
+	    margin: 0.12rem 0 0.656rem 0 !important;
+}
+
+.greyLine
+{
+	border-top: 1px solid #f2f2f2;
+	margin-bottom:10px;
+}
+
+.chat-secondary, .header-secondary {
+	min-height: 20px;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+.chat-title.emojitext, .location-main .emojitext, .header-title .emojitext
+	{
+	text-align: left;
+}
+
+.ellipsify {
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.chat-title, .header-title {
+	overflow: hidden;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #000;
+	-webkit-box-flex: 1;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.chat-main .chat-meta, .header-main .chat-meta {
+	line-height: 14px;
+	margin-top: 4px;
+}
+
+.chat-meta {
+	color: rgba(0, 0, 0, .4);
+	margin-left: 6px;
+	font-size: 12px;
+}
+
+.chat-meta .chat-time {
+	text-transform: capitalize;
+}
+
+.chat-main, .header-main, .chat-secondary, .header-secondary,
+	.control {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.element.style {
+	z-index: 65;
+	height: 72px;
+	will-change: transform;
+	transform: translate3d(0px, 900%, 0px);
+}
+
+.infinite-list-animate .infinite-list-item-transition {
+	-webkit-transition: -webkit-transform 200ms ease-out;
+	transition: transform 200ms ease-out;
+}
+
+.adDetailsInfo {
+	background-color: #f7f7f7;
+}
+
+.drawer-section {
+	margin: 13px 24px 0;
+}
+
+.title {
+	font-weight: bold;
+	font-family: inherit;
+}
+
+.saBoxBorder {
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 9px 14px 12px;
+}
+
+.boxBorder_adDetails
+{
+	    padding: 0px 14px 12px !important;
+	
+}
+
+.buttonsTopBorder
+{
+
+	padding: 10px;
+	
+}
+
+.subscribeButton,.fbButton
+{
+	    padding: 1px 2rem 1px 2rem !important;
+}
+
+.ad_details_info
+{
+   padding: 6px 14px 6px !important;
+
+}
+
+
+
+.title-underlined {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #f2f2f2;
+	margin-bottom: 6px;
+	min-height: 18px;
+	line-height: 18px;
+}
+
+.infinite-list-item {
+	position: absolute;
+	width: 100%;
+}
