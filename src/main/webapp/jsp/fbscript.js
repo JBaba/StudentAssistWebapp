@@ -12,7 +12,6 @@ $(document)
             // user denied notification permission
             // so sending user information to server
             if (permissionResult == false) {
-              console.log("user denied notification permission so sending user information to server");
               createUser(createUserUrl);
             }
 

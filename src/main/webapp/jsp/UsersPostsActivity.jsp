@@ -22,7 +22,7 @@
 
 		<div class="large-9 columns adDetailsInfo "  style="height:88%;border-radius:6px;">
 
-			<div id="sidebar">
+			<div class="sidebar">
 
 				<%@include file="adDetails.html"%>
 

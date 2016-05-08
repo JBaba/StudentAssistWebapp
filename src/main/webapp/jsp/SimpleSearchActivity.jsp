@@ -1,28 +1,20 @@
-
-<style>
-.dropdown-menu {
-	left: initial;
-}
-</style>
+<div ng-controller="simpleSearchController" >
 
 
-<div ng-app="ui.bootstrap.demo" ng-controller="simpleSearchController" >
+	<div class="row addsContainer">
 
+		<div class="large-3 columns addsList">
 
-	<div class="row" style="max-width: 95%; overflow-y: hidden;max-height:90%;">
-
-		<div class="large-3 columns saBoxBorder"
-			style="background: white; max-height: 90%; padding-right: 0; padding-left: 0; height:88%">
-
+	<div class="saBoxBorderLeft">
 
 			<%@include file="SimpleSearchFragment.html"%>
-
+</div>
 
 		</div>
 
-		<div class="large-9 columns adDetailsInfo "  style="height:88%;border-radius:6px;">
+		<div class="large-7 columns adDetailsInfo"  style="height:88%;">
 
-			<div id="sidebar">
+			<div class="sidebar">
 
 				<%@include file="adDetails.html"%>
 
@@ -33,13 +25,8 @@
 
 	</div>
 
-
-
-
-
-
-
-
-
-
 </div>
+
+
+
+
