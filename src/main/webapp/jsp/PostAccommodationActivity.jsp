@@ -1,144 +1,167 @@
-<html>
-
-
-
-
-<style>
-.box {
-	box-shadow: 5px 5px 8px #aaa;
-	border: 1px solid #dadada;
-	border-radius: 10px;
-	padding: 30px 2% 30px;
-	background-color: white;
-}
-
-.logo {
-	max-width: 30%;
-	height: auto;
-	width: auto/9;
-}
-
-.fbLogin {
-	margin-top: 10%;
-}
-
-.loginButton {
-	margin-top: 10%;
-	width: 60%;
-	height: 80%;
-}
-
-.loginPanel {
-	background: url('../images/wall.jpg');
-}
-</style>
-
 
 <body style="background-color: #f7f7f7; top: 2%;">
 
 
 	<!-- ApartmentType -->
 
-	<div ng-app="ui.bootstrap.demo"
-		ng-controller="postAccommodationController" ng-init="init()">
+	<div ng-controller="postAccommodationController" ng-init="init()">
 
 		<form name="newVacancy">
 			<div class="row">
 				<div class="small-6 columns">
 
-					<div class="box">
 
-						<div class="title-underlined ">
-							<h4>Vacancy Information</h4>
+
+					<div class="drawer-section saBoxBorder">
+						<div class="row ad_details_info">
+
+							<div class="small-2 columns" style="visibility: hidden;">a</div>
+
+							<div class="small-8 columns">
+
+								<h5 align="middle" class="notesSection">Apartment
+									Information</h5>
+
+							</div>
+							<div class="small-2 columns"></div>
 						</div>
+
+						<div class="greyLine"></div>
+
+						<div class="row ad_details_info">
+
+							<div class="row">
+								<div class="small-6 columns">
+									<label>Apartment Type:</label>
+								</div>
+								<div class="small-6 columns">
+									<span uib-dropdown on-toggle="toggled(open)"> <a href
+										id="simple-dropdown" uib-dropdown-toggle>
+											{{apartmentTypeHeader}} <i class="fa fa-sort-desc"></i>
+									</a>
+										<ul uib-dropdown-menu aria-labelledby="simple-dropdown">
+											<li ng-repeat="choice in apartmentTypes"><a
+												ng-click="apartmentType(choice)" href>{{choice}}</a></li>
+										</ul>
+									</span>
+								</div>
+							</div>
+
+
+							<!-- ApartmentName -->
+							<br />
+
+							<div class="row">
+								<div class="small-6 columns">
+
+									<label>ApartmentName:</label>
+
+								</div>
+								<div class="small-6 columns">
+									<span uib-dropdown on-toggle="toggled(open)"> <a href
+										id="simple-dropdown" uib-dropdown-toggle>
+											{{apartmentNameHeader}} <i class="fa fa-sort-desc"></i>
+									</a>
+										<ul uib-dropdown-menu aria-labelledby="simple-dropdown">
+											<li ng-repeat="choice in apartmentNames"><a
+												ng-click="apartmentName(choice.apartmentName)" href>{{choice.apartmentName}}</a>
+											</li>
+										</ul>
+									</span>
+								</div>
+							</div>
+
+							<!-- NoOfRooms -->
+
+							<br />
+							<div class="row">
+								<div class="small-6 columns">
+
+
+									<label>No. of Rooms:</label>
+								</div>
+								<div class="small-6 columns">
+
+									<span uib-dropdown on-toggle="toggled(open)"> <a href
+										id="simple-dropdown" uib-dropdown-toggle>
+											{{noOfRoomsHeader}} <i class="fa fa-sort-desc"></i>
+									</a>
+										<ul uib-dropdown-menu aria-labelledby="simple-dropdown">
+											<li ng-repeat="choice in noOfRooms"><a
+												ng-click="changeNoOfRoomsHeader(choice)" href>{{choice}}</a></li>
+										</ul>
+									</span>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<div class="small-6 columns">
+
+					<div class="drawer-section saBoxBorder">
+						<div class="row ad_details_info">
+
+							<div class="small-2 columns" style="visibility: hidden;">a</div>
+
+							<div class="small-8 columns">
+
+								<h5 align="middle" class="notesSection">Contact Information</h5>
+
+							</div>
+							<div class="small-2 columns"></div>
+						</div>
+
+						<div class="greyLine"></div>
 
 						<div class="row">
 							<div class="small-6 columns">
-								<label>Apartment Type:</label>
+								<label>phone Number:</label>
 							</div>
+
 							<div class="small-6 columns">
-								<span uib-dropdown on-toggle="toggled(open)"> <a href
-									id="simple-dropdown" uib-dropdown-toggle>
-										{{apartmentTypeHeader}} <i class="fa fa-sort-desc"></i>
-								</a>
-									<ul uib-dropdown-menu aria-labelledby="simple-dropdown">
-										<li ng-repeat="choice in apartmentTypes"><a
-											ng-click="apartmentType(choice)" href>{{choice}}</a></li>
-									</ul>
-								</span>
+								<input class="SAtextFiled" type="text">
 							</div>
 						</div>
-
-
-						<!-- ApartmentName -->
-
+						
+						<br/>
+						
 						<div class="row">
-							<div class="small-6 columns">
 
-								<label>ApartmentName:</label>
-
-							</div>
 							<div class="small-6 columns">
-								<span uib-dropdown on-toggle="toggled(open)"> <a href
-									id="simple-dropdown" uib-dropdown-toggle>
-										{{apartmentNameHeader}} <i class="fa fa-sort-desc"></i>
-								</a>
-									<ul uib-dropdown-menu aria-labelledby="simple-dropdown">
-										<li ng-repeat="choice in apartmentNames"><a
-											ng-click="apartmentName(choice.apartmentName)" href>{{choice.apartmentName}}</a>
-										</li>
-									</ul>
-								</span>
+								<label>email Address:</label>
 							</div>
+
+							<div class="small-6 columns">
+								<input class="SAtextFiled" type="text">
+							</div>
+
 						</div>
 
-						<!-- NoOfRooms -->
-						<div class="row">
-							<div class="small-6 columns">
+					</div>
 
+				</div>
+			</div>
 
-								<label>No. of Rooms:</label>
+			<div class="row">
+				<div class="small-6 columns">
+
+					<div class="drawer-section saBoxBorder">
+						<div class="row ad_details_info">
+
+							<div class="small-2 columns" style="visibility: hidden;">a</div>
+
+							<div class="small-8 columns">
+
+								<h5 align="middle" class="notesSection">Vacancy Information</h5>
+
 							</div>
-							<div class="small-6 columns">
-
-								<span uib-dropdown on-toggle="toggled(open)"> <a href
-									id="simple-dropdown" uib-dropdown-toggle>
-										{{noOfRoomsHeader}} <i class="fa fa-sort-desc"></i>
-								</a>
-									<ul uib-dropdown-menu aria-labelledby="simple-dropdown">
-										<li ng-repeat="choice in noOfRooms"><a
-											ng-click="changeNoOfRoomsHeader(choice)" href>{{choice}}</a></li>
-									</ul>
-								</span>
-							</div>
+							<div class="small-2 columns"></div>
 						</div>
 
 
-						<!-- Vacancies -->
-
-
-						<div class="row">
-							<div class="small-6 columns">
-
-								<label>vacancies:</label>
-
-							</div>
-							<div class="small-6 columns">
-
-								<span uib-dropdown on-toggle="toggled(open)"> <a href
-									id="simple-dropdown" uib-dropdown-toggle>
-										{{vacanciesHeader}} <i class="fa fa-sort-desc"></i>
-								</a>
-									<ul uib-dropdown-menu aria-labelledby="simple-dropdown">
-										<li ng-repeat="choice in vacancies"><a
-											ng-click="changeVacanciesHeader(choice)" href>{{choice}}</a></li>
-									</ul>
-								</span>
-
-							</div>
-						</div>
-
-						<!-- Gender -->
+						<div class="greyLine"></div>
 
 						<div class="row">
 							<div class="small-6 columns">
@@ -160,6 +183,8 @@
 								</span>
 							</div>
 						</div>
+						
+						<br/>
 
 						<!-- Text input-->
 
@@ -168,53 +193,29 @@
 
 
 
-								<label>Cost/Month</label>
+								<label>Cost per Month</label>
 							</div>
 							<div class="small-6 columns">
 
 
 
-								<input id="textinput" name="cost" ng-model="cost" type="number"
-									placeholder="cost/month" class="form-control input-md" required>
+								<input id="textinput" ng-pattern="/^[0-9]+$/" name="cost" ng-model="cost" type="number"
+									 class="SAtextFiled" required>
 								<span style="color: red"
-									ng-show="newVacancy.cost.$dirty && newVacancy.cost.$invalid">
-									<span>Invalid data</span> <span
+									ng-show="newVacancy.cost.$dirty && newVacancy.cost.$invalid || newVacancy.cost.$error.pattern">
+									<span ng-hide="newVacancy.cost.$error.required">Invalid data</span> <span
 									ng-show="newVacancy.cost.$error.required">cost per month
 										is required</span>
 								</span>
 							</div>
 						</div>
 
-						<!-- Text input-->
-						<div class="row">
-							<div class="small-6 columns">
-
-
-
-								<label>Facebook Id </label>
-
-							</div>
-							<div class="small-6 columns">
-
-								<input id="textinput" name="fbId" ng-model="fbId" type="number"
-									placeholder="Facebook Id" 
-									required> <span style="color: red"
-									ng-show="newVacancy.fbId.$dirty && newVacancy.fbId.$invalid">
-									<span>Invalid data</span> <span
-									ng-show="newVacancy.fbId.$error.required">facebook Id is
-										required</span>
-								</span>
-							</div>
-						</div>
+											<br/>
+					
 						<!-- Text input-->
 
 						<div class="row">
 							<div class="small-6 columns">
-
-
-
-
-
 								<label>Notes/Comments</label>
 
 							</div>
@@ -234,55 +235,37 @@
 
 							</div>
 						</div>
-						<!-- Button -->
 
-						<label></label>
-
-						<button class="btn btn-primary" ng-disabled="newVacancy.$invalid"
-							ng-click="submitClicked()">Submit</button>
 					</div>
-
 				</div>
-
 				<div class="small-6 columns">
+				
+				<div class="drawer-section saBoxBorder">
+		<div class="row ad_details_info">
 
+			<div class="small-4 columns" style="visibility: hidden;">a</div>
 
-					<div class="box">
+			<div class="small-3 columns">
 
-						<div class="title-underlined ">
-							<h4>Contact Information</h4>
-						</div>
-						<div class="row">
-							<div class="small-6 columns">
-								<label>phone Number:</label>
-							</div>
-
-							<div class="small-6 columns">
-								<input type="text">
-							</div>
-						</div>
-						<div class="row">
-
-							<div class="small-6 columns">
-								<label>email Address:</label>
-							</div>
-
-							<div class="small-6 columns">
-								<input type="text">
-							</div>
-
-						</div>
-					</div>
-
-
-
-				</div>
-
+				<h5 align="middle" class="notesSection">Images</h5>
 
 			</div>
+			<div class="small-5 columns"></div>
+		</div>
 
+		<div class="greyLine"></div>
 
+		<button class="btn btn-primary" ng-disabled="newVacancy.$invalid"
+							ng-click="submitClicked()">Submit</button>
 
+	</div>
+				
+				
+				
+				
+				</div>
+
+			</div>
 
 		</form>
 	</div>
@@ -290,5 +273,3 @@
 
 
 </body>
-
-</html>

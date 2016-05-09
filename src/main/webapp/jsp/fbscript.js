@@ -45,10 +45,10 @@ $(document)
       });
 
     });
-//931333680308184 - fb id for aws
+//404203969736974 - fb id for aws
 window.fbAsyncInit = function() {
   FB.init({
-    appId: '297115703779135',
+    appId: '404203969736974',
     xfbml: true,
     version: 'v2.5'
   });
